@@ -38,7 +38,7 @@ A modern, responsive web application for tracking personal income and expenses b
 
 ## 🚀 Live Demo
 
-🌐 **[View Live App](https://akshayasri0805.github.io/expense-tracker)**
+🌐 **[View Live App](https://expense-tracker-akshayasri0805.vercel.app)**
 
 ## 🛠️ Built With
 
@@ -189,10 +189,19 @@ npm run deploy
 2. Drag the `dist` folder to [Netlify](https://netlify.com)
 3. Your app is live!
 
-### Deploy to Vercel
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow the prompts
+### Deploy to Vercel (Recommended)
+1. Install Vercel CLI: 
+```bash
+npm i -g vercel
+```
+2. Deploy:
+```bash
+vercel
+```
+3. Follow the prompts and your app will be live!
+
+### Deploy to GitHub Pages
+1. Install gh-pages:
 
 ## 🤝 Contributing
 
