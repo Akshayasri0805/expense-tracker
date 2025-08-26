@@ -38,7 +38,7 @@ A modern, responsive web application for tracking personal income and expenses b
 
 ## 🚀 Live Demo
 
-🌐 **[View Live App](https://your-username.github.io/expense-tracker)**
+🌐 **[View Live App](https://akshayasri0805.github.io/expense-tracker)**
 
 ## 🛠️ Built With
 
@@ -61,7 +61,7 @@ Before running this project, make sure you have:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
+git clone https://github.com/Akshayasri0805/expense-tracker.git
 cd expense-tracker
 ```
 
@@ -171,7 +171,7 @@ npm install --save-dev gh-pages
 2. Add to package.json:
 ```json
 {
-  "homepage": "https://your-username.github.io/expense-tracker",
+  "homepage": "https://Akshayasri0805.github.io/expense-tracker",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -225,8 +225,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+**Akshaya Sri Arasada**
+- GitHub: [@Akshayasri0805](https://github.com/Akshayasri0805)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
 - Email: your.email@example.com
 
