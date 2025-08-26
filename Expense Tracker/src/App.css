@@ -1,0 +1,330 @@
+/* EXPENSE TRACKER STYLES - MOBILE RESPONSIVE */
+
+/* Global body styling for consistent appearance */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font stack */
+  margin: 0;                    /* Remove default browser margins */
+  padding: 0;                   /* Remove default browser padding */
+  background-color: #f5f5f5;    /* Light gray background for the entire app */
+}
+
+/* Main app container styling */
+.app-container {
+  min-height: 100vh;            /* Ensure full viewport height */
+  padding: 1rem;                /* Reduced padding for mobile */
+  max-width: 100%;              /* Prevent horizontal overflow */
+  box-sizing: border-box;       /* Include padding in width calculation */
+}
+
+/* Main heading styles */
+h1 {
+  color: #333;                  /* Dark gray text for good contrast */
+  margin-bottom: 0.5rem;        /* Spacing below the main title */
+  font-size: 2rem;              /* Responsive font size */
+  text-align: center;           /* Center align on all devices */
+}
+
+/* Subtitle styling */
+h3 {
+  color: #666;                  /* Lighter gray for secondary text */
+  font-weight: normal;          /* Not bold to differentiate from main heading */
+  margin-bottom: 2rem;          /* More spacing below subtitle */
+  text-align: center;           /* Center align on all devices */
+  font-size: 1.1rem;            /* Responsive font size */
+}
+
+/* Interactive button hover effects */
+button:hover {
+  opacity: 0.9;                 /* Slight transparency on hover */
+  transform: translateY(-1px);  /* Small upward movement for interactive feel */
+}
+
+/* Focus styles for form inputs and selects */
+input:focus, select:focus {
+  outline: none;                           /* Remove default browser outline */
+  border-color: #007bff;                   /* Blue border when focused */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Blue glow effect */
+}
+
+/* Hover effect for expense list items */
+.expense-item:hover {
+  transform: translateY(-2px);             /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);  /* Enhanced shadow on hover */
+}
+
+/* MOBILE RESPONSIVE STYLES */
+
+/* Cards container responsive layout */
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+/* Individual card responsive styles */
+.card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  min-width: 140px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Form container responsive styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Form row responsive layout */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-row label {
+  min-width: 80px;
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row select {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Button responsive styles */
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* History section responsive styles */
+.history-section {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Expense/Income item responsive styles */
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.transaction-details {
+  flex: 1;
+  min-width: 200px;
+}
+
+.transaction-amount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.transaction-category {
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.transaction-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+/* TABLET STYLES */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.75rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cards-container {
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+  }
+  
+  .card {
+    min-width: 120px;
+    padding: 1.25rem;
+  }
+  
+  .form-container {
+    padding: 1.25rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .form-row label {
+    min-width: auto;
+  }
+  
+  .form-row input,
+  .form-row select {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* MOBILE STYLES */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    align-items: stretch;
+  }
+  
+  .card {
+    min-width: auto;
+    max-width: none;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .card h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .card p {
+    font-size: 1.25rem;
+  }
+  
+  .form-container {
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .transaction-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .transaction-details {
+    min-width: auto;
+  }
+  
+  .delete-button {
+    align-self: stretch;
+    text-align: center;
+  }
+  
+  .history-section {
+    padding: 0 0.5rem;
+  }
+  
+  .history-section h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* VERY SMALL SCREENS */
+@media (max-width: 320px) {
+  .app-container {
+    padding: 0.25rem;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+  }
+  
+  .card {
+    padding: 0.75rem;
+  }
+  
+  .form-container {
+    padding: 0.75rem;
+  }
+  
+  .form-row input,
+  .form-row select {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .submit-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
